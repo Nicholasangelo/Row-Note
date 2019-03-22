@@ -1,0 +1,10 @@
+/* .projectCard {
+    text-align: center;
+} 
+.content{
+    background: inherit;
+} */
+.projectCard:hover{
+    background: #CF5360;
+
+}

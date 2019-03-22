@@ -1,0 +1,19 @@
+.eventLogo{
+    text-align: center;
+}
+.uOfRLogo{
+    height: 10em;
+    width: 21em;
+}
+.devItem{
+    background: linear-gradient(to right, #276EA9, 30% #CF5360);
+    box-shadow: 1px 1px 7px 0px dimgrey;
+    background-image: -webkit-linear-gradient(left, rgba(255,0,0,0), #CF5360);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), 30% #CF5360);
+    font-size: 4vw;
+    font-family: "News Cycle", "Arial Narrow", sans-serif;
+    overflow: hidden;
+    padding: 0 0 29px;
+    margin-bottom: 10px;
+    color: ghostwhite;
+} 
