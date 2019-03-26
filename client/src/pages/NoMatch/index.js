@@ -5,7 +5,7 @@ function NoMatch() {
     return (
 
     <div>
-        <img src="./public/images/jenny404.jpg" alt="Page Not Found" />
+        <img src="/images/Jenny404.jpg" alt="Page Not Found" />
 
     </div>  
 

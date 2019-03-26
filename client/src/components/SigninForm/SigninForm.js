@@ -47,8 +47,10 @@ class SigninForm extends Component {
       // console.log(`about to validateuser!! ${JSON.stringify(query)}`);
       API.getUser(query)
       .then(res => {
+
         console.log(`LOGIN: ${JSON.stringify(res)}`);
-      if (res.data.success) {
+      
+        if (res.data.success) {
         console.log("success");
         this.setState({isLoggedIn: true, });
         this.setState({ loginMsg: res.data.message});
@@ -57,8 +59,10 @@ class SigninForm extends Component {
         sessionStorage.setItem("userData", this.state.userName.toLowerCase());
         // sessionStorage.setItem("userId", users._id);
 
-        window.location.assign('/view-event');
+        window.location.assign('/my-projects');
+
         console.log(`sessionStorage: ${res.data.userName}`)
+      
       } else {
         console.log("failure");
         this.setState({ isLoggedIn: false });

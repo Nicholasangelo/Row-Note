@@ -6,11 +6,17 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
   userName: { type: String, required: true },
-  company: { type: String, required: true },
-  phoneNumber: { type: String, required: false },
   password: { type: String, required: true },
   isDeleted:  { type: Boolean, default: false },
-  notes:{ type:String, required: false }
+  // notes:{ type:String, required: false }
+  _project: [
+    {
+      // Store ObjectIds in the array
+      type: mongoose.Schema.Types.ObjectId,
+      // The ObjectIds will refer to the ids in the project model
+      ref: "Project"
+    }
+  ]
 });
 
 

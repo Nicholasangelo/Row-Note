@@ -5,9 +5,8 @@ const router = require("express").Router();
 const loginController = require("../controllers/loginController");
 
 // API Routes
-const developersController = require("../controllers/developersController");
-const projectsController = require("../controllers/projectsController");
-const notesController = require("../controllers/notesController");
+// const projectsController = require("../controllers/projectsController");
+// const notesController = require("../controllers/notesController");
 const userController = require("../controllers/userController");
 
 //API Routes
@@ -15,15 +14,15 @@ const userController = require("../controllers/userController");
 // 00-- PROJECT ROUTES --00
 
 //Create a new project
-router
-.route("/api/projects")
-.post(projectsController.create)
-.get(projectsController.findAll);
+// router
+// .route("/api/projects")
+// .post(projectsController.create)
+// .get(projectsController.findAll);
 
-router
-.route("/api/projects/:id")
-.put(projectsController.update)
-.get(projectsController.findProject);
+// router
+// .route("/api/projects/:id")
+// .put(projectsController.update)
+// .get(projectsController.findProject);
 
 
 // 0-0-0-0-0-0-0-0-0-0-0-0-0--0-0-0-0-0-0-0-0--0--0-0-0-0-0-0-0-0-
@@ -60,22 +59,22 @@ router
 // 00-- DEVS --00
 
 //Create a new developer
-router
-.route("/api/developers")
-.post(developersController.create)
-.get(developersController.findDev)
-.get(developersController.findAll);
+// router
+// .route("/api/developers")
+// .post(developersController.create)
+// .get(developersController.findDev)
+// .get(developersController.findAll);
 
 //Update by id
-router.route("/api/developers/:id")
-.put(developersController.update);
+// router.route("/api/developers/:id")
+// .put(developersController.update);
 
 // 0-0-0-0-0-0-0-0-0-0-0-0-0--0-0-0-0-0-0-0-0--0--0-0-0-0-0-0-0-0-
 // 00-- FIND USER INFO --00
 router
 .route("/api/users/:user")
 .get(userController.getUserName)
-.put(notesController.saveNote);
+// .put(notesController.saveNote);
 
 // 0-0-0-0-0-0-0-0-0-0-0-0-0--0-0-0-0-0-0-0-0--0--0-0-0-0-0-0-0-0-
 // 00-- NOTES --00

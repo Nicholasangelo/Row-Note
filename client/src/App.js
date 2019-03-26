@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Signin from "./pages/Signin";
+import MyProjects from "./pages/MyProjects";
 import NoMatch from "./pages/NoMatch";
 import "./app.css";
+import CreateAcct from "./pages/CreateAcct";
 
 
 class App extends Component {
@@ -41,10 +43,12 @@ class App extends Component {
     <Router>
       <div className="container">
       <div className="row">
-      <div className="col-sm-12 col-md-9 offset-md-2">
+      <div className="col-12">
         <Switch>
           <Route exact path="/" component={Welcome} />
           <Route exact path="/sign-in" component={Signin} />
+          <Route exact path="/create-acct" component={CreateAcct} />
+          <Route exact path="/my-projects" component={MyProjects} />
           <Route component={NoMatch} />
         </Switch>
       </div>

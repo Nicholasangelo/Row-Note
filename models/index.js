@@ -1,7 +1,6 @@
 // OK
 module.exports = {
-  Project: require("./project"),
-  Developer: require("./developer"),
+    Project: require("./project"),
     User: require("./User"),
     UserSession: require("./UserSession")
   };

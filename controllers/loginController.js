@@ -43,12 +43,6 @@ module.exports = {
         message: 'ERROR: You must create a user name.'
       });
     };
-    if (!company) {
-      return res.send({
-        success: false,
-        message: 'ERROR: You must specify which company you are representing.'
-      });
-    };
     if (!password) {
       return res.send({
         success: false,
@@ -80,8 +74,6 @@ console.log(db.User);
 
     const newUser = new User();
     newUser.userName = userName;
-    newUser.company = company;
-    newUser.phoneNumber = phoneNumber;
     newUser.password = newUser.generateHash(password);
     newUser.save((err, user) => {
       if (err) {
