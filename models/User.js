@@ -16,7 +16,11 @@ const UserSchema = new Schema({
       // The ObjectIds will refer to the ids in the project model
       ref: "Project"
     }
-  ]
+  ],
+  _notes: {
+    type: String,
+    ref: "Notes"
+  },
 });
 
 

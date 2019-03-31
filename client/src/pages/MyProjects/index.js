@@ -1,12 +1,12 @@
 
 import React from "react";
-import ProjectCard from "../../components/ProjectCard/ProjectCard.js";
+import NewProjectCard from "../../components/NewProjectCard/NewProjectCard.js";
 
 function MyProjects() {
     return (
       <div>
         <h1>Rownote</h1>
-        <ProjectCard />
+        <NewProjectCard />
        
       </div>
     );

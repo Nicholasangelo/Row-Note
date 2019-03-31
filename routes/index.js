@@ -5,7 +5,7 @@ const router = require("express").Router();
 const loginController = require("../controllers/loginController");
 
 // API Routes
-// const projectsController = require("../controllers/projectsController");
+const projectsController = require("../controllers/projectsController");
 // const notesController = require("../controllers/notesController");
 const userController = require("../controllers/userController");
 
@@ -13,11 +13,11 @@ const userController = require("../controllers/userController");
 // 0-0-0-0-0-0-0-0-0-0-0-0-0--0-0-0-0-0-0-0-0--0--0-0-0-0-0-0-0-0-
 // 00-- PROJECT ROUTES --00
 
-//Create a new project
-// router
-// .route("/api/projects")
-// .post(projectsController.create)
-// .get(projectsController.findAll);
+// Create a new project
+router
+.route("api/projects")
+.post(projectsController.create)
+.get(projectsController.findAll);
 
 // router
 // .route("/api/projects/:id")

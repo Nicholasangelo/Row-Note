@@ -5,12 +5,16 @@ const Schema = mongoose.Schema;
 
 const ProjectSchema = new Schema({
   projectName: { type: String, required: true },
-  projectBody: { type: String, required: true },
-  projectNotes:{ type:String, required: false },
+  projectBody: { type: String, required: false },
   _user: {
     type: String,
     ref: "User"
   },
+  _notes: {
+    type: String,
+    ref: "Notes"
+  },
+
 });
 
 

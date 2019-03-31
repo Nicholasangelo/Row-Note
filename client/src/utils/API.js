@@ -34,6 +34,7 @@ export default {
  
   //Project API
   createProject: function(projectData) {
+    console.log(`API: ${JSON.stringify(projectData)}`)
     return axios.post("/api/projects", projectData);
   },
   getProjects: function(query) {
@@ -50,22 +51,5 @@ export default {
     return axios.put("/api/projects/" + projectData, data);
   },  
 
-  //Developers API
-  createDeveloper: function(developerData) {
-    return axios.post("/api/developers", developerData);
-  },
-  getAllDevs: function() {
-    return axios.get("/api/developers");
-  },
-   // getDevs: function(query) {
-  //   return axios.get("/api/developers", query);
-  // },
-  getDev: function(_id) {
-    return axios.get("/api/developers", _id)
-  },
-  incrementDevInterviews: function(devId) {
-    console.log(devId)
-    return axios.put("/api/developers/" + devId);
-  }
 
 };
