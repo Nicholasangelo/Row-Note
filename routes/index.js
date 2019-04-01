@@ -15,7 +15,7 @@ const userController = require("../controllers/userController");
 
 // Create a new project
 router
-.route("api/projects")
+.route("/api/projects")
 .post(projectsController.create)
 .get(projectsController.findAll);
 

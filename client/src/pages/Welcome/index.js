@@ -11,7 +11,7 @@ function Welcome() {
         {/* <h1>demoDay</h1> */}
         <WelcomeNav />
         <div className="welcomeImgDiv">
-          <img className="welcomeImg" src="./images/demoDayBeer.png" alt="Demo Day Logo"></img>
+          <img className="welcomeImg" src="./images/Rownote.svg" alt="Row Note Logo"></img>
         </div>
       </div>
     );

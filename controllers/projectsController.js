@@ -4,8 +4,10 @@ module.exports = {
     create: function(req, res) {
         db.Project
         .create(req.body)
-        .then(dbModel => res.jason(dbModel))
-        .catch(err => res.status(422),JSON(err));
+        .then(dbModel => res.json(dbModel))
+        .catch(err => res.status(422).JSON(err));
+
+        console.log(`proContoller: made it`);
     },
     findAll: function(req, res) {
         db.Project

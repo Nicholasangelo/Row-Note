@@ -30,8 +30,6 @@ module.exports = {
     const { body } = req;
   
     const {
-      company,
-      phoneNumber,
       password
     } = body;
     let { userName } = body;

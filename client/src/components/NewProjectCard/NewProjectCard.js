@@ -15,29 +15,26 @@ class NewProjectCard extends Component {
 
 
     let projectValue = event.target.value;
-    let projectName = event.target.name;
+    // let projectName = event.target.name;
 
 
     this.setState({
-      [projectName]: projectValue
+      projectName: projectValue
     });
   }
 
   handleFormSubmit = event => {
     event.preventDefault();
-    this.setState({
-      projectName: this.state.projectName
-    })
+    // this.setState({
+    //   projectName: this.state.projectName
+    // })
 
-    console.log(this.state.projectName)
+    // console.log(this.state.projectName)
 
     this.createProject({
       projectName: this.state.projectName
     });
 
-    // this.setState({
-    //   projectName: ""
-    // })
     
   }
 
@@ -45,9 +42,9 @@ class NewProjectCard extends Component {
     API.createProject(query)
       .then(res => {
         if (res.data.success) {
-          console.log(`New Project Created: ${this.state.projectNmae}`)
+          console.log(`New Project Created: ${this.state.projectName}`)
         } else {
-          console.log(`New Project ERROR: ${this.state.projectNmae}`)
+          console.log(`New Project ERROR: ${query}`)
 
         }
       })
@@ -80,20 +77,6 @@ render() {
       </div>
 
 
-      <div className="myProjects">
-
-        {/* MY PROJECTS HEADLINE */}
-        <div className="row">
-          <div id="project-list" className="col-12">
-            <p><strong>my projects:</strong></p>
-          </div>
-        </div>
-
-        {/* MY PROJECTS LIST AREA  */}
-        <div className="projects input-group mb-2">
-        </div>
-
-      </div>
     </>
   )
 }

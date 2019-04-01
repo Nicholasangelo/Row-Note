@@ -34,12 +34,12 @@ export default {
  
   //Project API
   createProject: function(projectData) {
-    console.log(`API: ${JSON.stringify(projectData)}`)
-    return axios.post("/api/projects", projectData);
+    // console.log(`API: ${JSON.stringify(projectData)}`)
+    return axios.post("/api/projects/", projectData);
   },
-  getProjects: function(query) {
-    return axios.get("/api/projects", query);
-  },
+  // getProjects: function(query) {
+  //   return axios.get("/api/projects", query);
+  // },
   getAllProjects: function() {
     return axios.get("/api/projects");
   },
