@@ -8,13 +8,20 @@ import HeaderBar from "../../components/HeaderBar";
 
 function Workspace() {
     return (
-<>
-        
+        <>
+
             <HeaderBar />
-            <Wordprocessor />
-            <Notes />
-        
-</>
+            <div className="container">
+                <div className="row">
+                    <div className="WP col-md-8 col-sm-12">
+                        <Wordprocessor />
+                    </div>
+                    <div className="notes col-md-4 col-sm-12">
+                        <Notes />
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

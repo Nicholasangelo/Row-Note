@@ -6,6 +6,8 @@ import "./signinForm.css";
 class SigninForm extends Component {
     state = {
         isLoggedIn: false,
+        userName: "",
+        userId:""
 
         
     };
@@ -39,6 +41,7 @@ class SigninForm extends Component {
         this.validateUser({
           userName: this.state.userName,
           password: this.state.password,
+          userId: this.state.id
       
         });
       };
@@ -57,7 +60,7 @@ class SigninForm extends Component {
         window.localStorage.setItem("SMC_authkey", res.data.token);
 
         sessionStorage.setItem("userData", this.state.userName.toLowerCase());
-        // sessionStorage.setItem("userId", users._id);
+        // sessionStorage.setItem("userId", res.data._id);
 
         window.location.assign('/my-projects');
 

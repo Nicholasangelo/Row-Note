@@ -56,8 +56,8 @@ these functions to be incorporated into workspace.js
   #duck-icon {
     position: relative;
     float: left;
-    top: 14px;
-    height: 23px;
+    top: 1px;
+    height: 46px;
     margin-right: 12px;
     margin-left: 2px;
     /* background-color: rgb(196, 109, 132); */

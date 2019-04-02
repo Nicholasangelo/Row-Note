@@ -56,8 +56,10 @@ router
 .post(loginController.logout);
 
 // 0-0-0-0-0-0-0-0-0-0-0-0-0--0-0-0-0-0-0-0-0--0--0-0-0-0-0-0-0-0-
-// 00-- DEVS --00
-
+// 00-- USER PROJECTS --00
+router
+.route("/api/userprojects")
+.get(userController.userProjects)
 //Create a new developer
 // router
 // .route("/api/developers")

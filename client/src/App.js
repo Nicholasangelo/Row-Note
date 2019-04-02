@@ -42,7 +42,7 @@ class App extends Component {
   render() {
   return (
     <Router>
-      <div className="container">
+      <div className="pageContainer">
       <div className="row">
       <div className="col-12">
         <Switch>

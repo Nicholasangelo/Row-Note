@@ -16,7 +16,7 @@ class Notes extends Component {
         return (
 
             <>
-                // TOPICS AND RESOURCES COL --> */ }
+                {/* TOPICS AND RESOURCES COL --> */ }
                 <div id="resources" className="col-sm-4" data-hide="true">
                     {/* NOTES BTN ONCLICK SHOWS LIST OF TOPICS --> */}
                     <button id="viewNotes">Notes</button>

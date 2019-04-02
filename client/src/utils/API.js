@@ -23,6 +23,9 @@ export default {
     console.log("Query in API = " + JSON.stringify(query));
     return axios.post("/api/verify", query);
   },
+  getUserProjects: function(id) {
+    return axios.get("/api/userprojects", id)
+  },
 
   saveNote: function(query) {
     return axios.put("/api/users/" + query);

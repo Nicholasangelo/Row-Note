@@ -11,7 +11,7 @@ class MyProjects extends Component {
     projects: "",
     userId: "",
     isLoggedIn: false,
-    currentUser: ""
+    currentUser: "",
   };
 
   componentDidMount() {
