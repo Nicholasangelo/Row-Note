@@ -24,10 +24,11 @@ these functions to be incorporated into workspace.js
   /* HEADER BAR STYLES BELOW */
   
   #topbar {
-    position: fixed;
+    position: relative;
     z-index: 3;
     height: 50px;
     background-color: rgb(33, 71, 104);
+    width: 100vw;
   }
   
   #topbar-content {

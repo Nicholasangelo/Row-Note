@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Signin from "./pages/Signin";
 import MyProjects from "./pages/MyProjects";
+import Workspace from "./pages/Workspace";
 import NoMatch from "./pages/NoMatch";
 import "./app.css";
 import CreateAcct from "./pages/CreateAcct";
@@ -49,6 +50,7 @@ class App extends Component {
           <Route exact path="/sign-in" component={Signin} />
           <Route exact path="/create-acct" component={CreateAcct} />
           <Route exact path="/my-projects" component={MyProjects} />
+          <Route exact path="/project-detail/:project" component={Workspace} />
           <Route component={NoMatch} />
         </Switch>
       </div>
