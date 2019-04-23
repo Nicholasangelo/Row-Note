@@ -1,0 +1,20 @@
+@import "../src/CSS/colors";
+@import "../src/CSS/font";
+
+body{ 
+    background: $background;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: $hoverGlow;
+}
+
+a {
+    color: dimgrey;
+}
+label{
+    @extend %formTitles;
+}

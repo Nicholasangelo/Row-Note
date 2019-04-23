@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import API from "../../../src/utils/API";
 import NewProjectCard from "../../components/NewProjectCard/NewProjectCard.js";
 import MyProjectsCard from "../../components/MyProjectsCard/MyProjectsCard.js";
-import {BrowserRouter as Router,Link,} from 'react-router-dom';
+import {BrowserRouter as Link,} from 'react-router-dom';
 
 
 class MyProjects extends Component {

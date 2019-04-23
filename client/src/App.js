@@ -6,6 +6,7 @@ import MyProjects from "./pages/MyProjects";
 import Workspace from "./pages/Workspace";
 import NoMatch from "./pages/NoMatch";
 import "./app.css";
+import "./app.scss";
 import CreateAcct from "./pages/CreateAcct";
 
 

@@ -10,7 +10,10 @@ DOM event handlers for wordprocessor.handlebars page view
 these functions to be incorporated into workspace.js
 ==================================================== */
 
-
+.pageContainer{
+  width: 90vw;
+  margin: 0 auto;
+}   
 .list-group-item {
     line-height: 2.5;
   }
