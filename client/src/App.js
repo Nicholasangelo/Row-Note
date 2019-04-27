@@ -51,7 +51,7 @@ class App extends Component {
           <Route exact path="/sign-in" component={Signin} />
           <Route exact path="/create-acct" component={CreateAcct} />
           <Route exact path="/my-projects" component={MyProjects} />
-          <Route exact path="/project-detail/:project" component={Workspace} />
+          <Route exact path="/project-detail" component={Workspace} />
           <Route component={NoMatch} />
         </Switch>
       </div>

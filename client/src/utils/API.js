@@ -46,7 +46,7 @@ export default {
   getAllProjects: function() {
     return axios.get("/api/projects");
   },
-  getProject: function(id) {
+  getSingleProject: function(id) {
     return axios.get("/api/projects/" + id);
   },
   updateProject: function(projectData, data) {

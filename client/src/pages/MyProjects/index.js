@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import API from "../../../src/utils/API";
 import NewProjectCard from "../../components/NewProjectCard/NewProjectCard.js";
 import MyProjectsCard from "../../components/MyProjectsCard/MyProjectsCard.js";
-import {BrowserRouter as Link,} from 'react-router-dom';
-
+// import {BrowserRouter as Link} from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 class MyProjects extends Component {
   state = {
@@ -59,6 +59,7 @@ class MyProjects extends Component {
 
   render() {
     return (
+      
       <div>
         <h1>Rownote</h1>
         <NewProjectCard />
@@ -67,7 +68,7 @@ class MyProjects extends Component {
           <ul className="projectList list-group list-group-flush">
             {this.state.projects.map((project) => (
 
-              <Link to={`/project-detail/${project._id}`}>
+              <Link to={"/project-detail"}>
                 <li className="project list-group-item">
 
                   <MyProjectsCard
@@ -82,6 +83,7 @@ class MyProjects extends Component {
             <h3>No Results to Display</h3>
           )}
       </div>
+      
     );
   }
 }
